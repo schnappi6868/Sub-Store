@@ -1,0 +1,17 @@
+name = "sub-store"
+main = "src/worker.js"
+compatibility_date = "2025-01-27"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+# 我们将稍后在Cloudflare中设置这些变量
+# ADMIN_PASSWORD = "your-password-here"
+# JWT_SECRET = "your-jwt-secret-here"
+
+[build]
+command = "npm install && npm run build"
+
+[[kv_namespaces]]
+binding = "KV"
+id = ""  # 稍后填写
+preview_id = ""  # 稍后填写
